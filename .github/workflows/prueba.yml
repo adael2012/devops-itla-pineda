@@ -1,0 +1,15 @@
+
+name: Prueba de GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  verificar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Confirmar funcionamiento
+        run: echo "GitHub Actions funciona correctamente"
